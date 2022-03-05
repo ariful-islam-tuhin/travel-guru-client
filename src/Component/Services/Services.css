@@ -1,0 +1,98 @@
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 21px;
+  }
+  .wellcome {
+    color: #39e9fe;
+    font-size: 3rem;
+    margin-top: 200px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+  }
+  h4{
+    color: #39e9fe;
+  }
+  .image {
+    width: 90%;
+    height: 420px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .facilities {
+    height: 400px;
+  }
+  
+  .fill-comfort {
+    padding: 50px 20px;
+    background-color: #f8f6f2;
+  }
+  .comfort {
+    letter-spacing: 50;
+    padding: 30px;
+  }
+  .fill-comfort-para {
+    font-size: 15px;
+    color:rgb(160, 159, 159);
+  }
+  @media only screen and (max-width: 668px) {
+    .home-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media only screen and (min-width: 689px) and (max-width: 991px) {
+    .home-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .midtown {
+    color: #39e9fe;
+    font-size: 50px;
+    padding: 50px;
+  }
+  .warning {
+    color: #ffffff;
+    padding-top: 200px;
+  }
+  .video {
+    width: 100%;
+    max-height:660px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
+  }
+  
+  
+  /* .dinner-div { 
+    background-size: 100% 100%; 
+    max-height:400px; 
+    max-width:400px; 
+  }
+  .facilities-div { 
+    background-size: 100% 100%;
+    max-width:400px; 
+    max-height:400px; 
+  
+  } */
+  .park-dining{
+    padding:20px;
+    margin:30px;
+    box-sizing: border-box;
+  }
+  /* .order-list li {
+    text-align: left;
+    color:red;
+    
+   
+  } */
+  .image-daining {
+    width: 100%;
+    max-height: 300%;
+  }
+  .rooms-featured {
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  
