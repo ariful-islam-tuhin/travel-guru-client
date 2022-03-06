@@ -9,6 +9,7 @@ import Services from './Component/Services/Services';
 import AuthProvider from './Component/Context/AuthProvider';
 import NotFound from './Component/NotFound/NotFound';
 import PrivetRoute from './Component/PrivetRoute/PrivetRoute';
+import PlaceBook from './Component/PlaceBook/PlaceBook';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
             <PrivetRoute path="/services">
               <Services></Services>     
             </PrivetRoute>
+            <Route path="/placebook">
+          <PlaceBook></PlaceBook>    
+            </Route>
             
             <Route path="*">
               <NotFound></NotFound>
