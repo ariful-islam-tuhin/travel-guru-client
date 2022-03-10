@@ -8,13 +8,13 @@ const Services = () => {
   return (
 
     <div className='container'>
-    <h2 className="rooms-featured">Featured Rooms</h2>
-    <div className="home-container">
+      <h2 className="rooms-featured">Room Booked</h2>
 
-      {AllService.map((service) => (
-        <SingleService key={service._id} service={service}></SingleService>
-      ))}
-  
+
+      <div className="home-container">
+        {AllService.map((service) => (
+          <SingleService key={service._id} service={service}></SingleService>
+        ))}
       </div>
     </div>
   );

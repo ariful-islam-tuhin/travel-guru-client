@@ -1,14 +1,16 @@
 .service-div {
-    height: 650px; 
-    margin-top: 30px;
+    height: 500px; 
+    margin-bottom: 20px;
     border:.5px solid rgba(211, 211, 211, 0.336);
   }
   .image:hover {
-    transform: scale(1) skew(-15deg);
-    transition:transform 2s ease-in-out;
+    transform: scale(1.1) skew(-15deg);
+    transition:transform 2s ease-in-out; 
+    z-index: -1;
+
   }
   .image:not(:hover) {
-    transform: scale(.8) skew(15deg);
+    transform: scale(.8) skew(0deg);
     transition:transform 2s ease-in-out;
     
   }
@@ -16,6 +18,7 @@
     transform: scale(1) skew(0deg);
     transition:transform 2s ease-in-out;
   }
+
   .room-desc:not(:hover) {
     transform: scale(.8) skew(15deg);
     transition:transform 2s ease-in-out;

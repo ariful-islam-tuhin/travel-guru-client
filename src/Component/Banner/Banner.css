@@ -1,7 +1,26 @@
-img {
+/* img {
     width: 100%;
-    max-height:660px;
+    max-height:450px;
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+    size: 100% 100%;
+    
+  } */
+  .header{
+    margin-right: 120px;
+    display: inline;
+    background-color: none;
+  }
+
+  img{
+   
+    max-height: 500px;
+   max-width: 400px; 
+  }
+  .background-img{
+  background-image: url('https://i.ibb.co/pPGjydg/Rectangle-1.png');
+  }
+  .carusel-side{
+    background-color: rgba(255, 0, 0, 0.418);
   }

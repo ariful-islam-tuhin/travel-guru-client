@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const UseService = () => {
     const [AllService, setServices] = useState([]);
     
-    console.log(AllService)
+    // console.log(AllService)
     
     useEffect(() => {
       fetch("http://localhost:5000/services")

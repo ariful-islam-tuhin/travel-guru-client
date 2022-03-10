@@ -9,6 +9,11 @@ import Services from './Component/Services/Services';
 import AuthProvider from './Component/Context/AuthProvider';
 import NotFound from './Component/NotFound/NotFound';
 import PrivetRoute from './Component/PrivetRoute/PrivetRoute';
+import PlaceBook from './Component/PlaceBook/PlaceBook';
+import AddService from './Component/AddService/AddService';
+import MyOrder from './Component/MyOrder/MyOrder';
+import AllOrder from './Component/AllOrder/AllOrder';
+
 
 
 function App() {
@@ -19,19 +24,31 @@ function App() {
         <Router>
           <Navigation />
           <Switch>
-          <Route exact path="/">
+            <Route exact path="/">
               <Home></Home>
             </Route>
             <Route exact path="/home">
               <Home></Home>
-            </Route>        
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
             <PrivetRoute path="/services">
-              <Services></Services>     
+              <Services></Services>
             </PrivetRoute>
-            
+            <Route path="/placebook/:serviceId">
+              <PlaceBook></PlaceBook>
+            </Route>
+            <Route path="/addservice">
+              <AddService></AddService>
+            </Route>
+            <Route path="/myorder">
+           <MyOrder></MyOrder>
+            </Route>
+            <Route path="/allorder">
+           <AllOrder></AllOrder>
+            </Route>
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>
