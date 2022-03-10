@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <AuthProvider>
 
-        <Router>
+        <Router basename="/tothepoint_login">
           <Navigation />
           <Switch>
             <Route exact path="/">
