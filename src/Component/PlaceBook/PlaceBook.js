@@ -23,7 +23,7 @@ const PlaceBook = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${serviceId}`)
+    fetch(`https://travel-website-5fb93.web.app/services/${serviceId}`)
       .then(res => res.json())
       .then(data => setBooking(data))
   }, [serviceId])
@@ -52,7 +52,7 @@ const PlaceBook = () => {
       phone,
     };
     // console.log(saveBooking);
-    const uri = "http://localhost:5000/orders";
+    const uri = "https://travel-website-5fb93.web.app/orders";
     console.log(uri)
     fetch(uri, {
       method: "POST",

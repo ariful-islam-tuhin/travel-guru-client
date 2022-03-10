@@ -16,7 +16,7 @@ const AllOrder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("are you sure, you want to delete!!!");
         if (proceed) {
-            fetch(`http://localhost:5000/myorder/${id}`, {
+            fetch(`https://travel-website-5fb93.web.app/myorder/${id}`, {
                 method: "DELETE",
             })
                 .then((res) => res.json())
@@ -36,7 +36,7 @@ const AllOrder = () => {
         const updatestatus = AllOrder.find((update) => update?._id === id);
         updatestatus.status = "approved";
 
-        const uri = `http://localhost:5000/myorder/${id}`;
+        const uri = `https://travel-website-5fb93.web.app/myorder/${id}`;
         fetch(uri, {
             method: "PUT",
             headers: {

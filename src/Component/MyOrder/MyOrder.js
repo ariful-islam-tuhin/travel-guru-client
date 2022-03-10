@@ -8,7 +8,7 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        const uri = `http://localhost:5000/myorder/${user?.email}`;
+        const uri = `https://travel-website-5fb93.web.app/myorder/${user?.email}`;
         fetch(uri)
             .then((res) => res.json())
             .then((data) => setMyOrder(data));

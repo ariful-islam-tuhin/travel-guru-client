@@ -9,7 +9,7 @@ const AddService = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("http://localhost:5000/services", data)
+      .post("https://travel-website-5fb93.web.app/services", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("added succesfully");

@@ -7,7 +7,7 @@ const UseService = () => {
     // console.log(AllService)
     
     useEffect(() => {
-      fetch("http://localhost:5000/services")
+      fetch("https://travel-website-5fb93.web.app/services")
         .then((res) => res.json())
         .then((data) => setServices(data));
     }, []);
