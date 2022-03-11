@@ -9,7 +9,7 @@ const AddService = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://travel-website-5fb93.web.app/services", data)
+      .post("https://whispering-taiga-90929.herokuapp.com/services", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("added succesfully");

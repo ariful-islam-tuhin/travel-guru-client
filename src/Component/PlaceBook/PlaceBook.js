@@ -23,7 +23,7 @@ const PlaceBook = () => {
 
 
   useEffect(() => {
-    fetch(`https://travel-website-5fb93.web.app/services/${serviceId}`)
+    fetch(`https://whispering-taiga-90929.herokuapp.com/services/${serviceId}`)
       .then(res => res.json())
       .then(data => setBooking(data))
   }, [serviceId])
@@ -52,7 +52,7 @@ const PlaceBook = () => {
       phone,
     };
     // console.log(saveBooking);
-    const uri = "https://travel-website-5fb93.web.app/orders";
+    const uri = "https://whispering-taiga-90929.herokuapp.com/orders";
     console.log(uri)
     fetch(uri, {
       method: "POST",

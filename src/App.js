@@ -24,27 +24,35 @@ function App() {
         <Router basename="/tothepoint_login">
           <Navigation />
           <Switch>
+            
             <Route exact path="/">
               <Home></Home>
             </Route>
+
             <Route exact path="/home">
               <Home></Home>
             </Route>
+
             <Route path="/login">
               <Login></Login>
             </Route>
+
             <PrivetRoute path="/services">
               <Services></Services>
             </PrivetRoute>
+
             <Route path="/placebook/:serviceId">
               <PlaceBook></PlaceBook>
             </Route>
+
             <Route path="/addservice">
               <AddService></AddService>
             </Route>
+
             <Route path="/myorder">
            <MyOrder></MyOrder>
             </Route>
+
             <Route path="/allorder">
            <AllOrder></AllOrder>
             </Route>

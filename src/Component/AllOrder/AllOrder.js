@@ -6,7 +6,7 @@ import './AllOrder.css'
 const AllOrder = () => {
     const [AllOrder, setAllOrder] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/allorder")
+        fetch("https://whispering-taiga-90929.herokuapp.com/allorder")
             .then((res) => res.json())
             .then((data) => setAllOrder(data));
     }, [AllOrder]);
@@ -16,7 +16,7 @@ const AllOrder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("are you sure, you want to delete!!!");
         if (proceed) {
-            fetch(`https://travel-website-5fb93.web.app/myorder/${id}`, {
+            fetch(`https://whispering-taiga-90929.herokuapp.com/myorder/${id}`, {
                 method: "DELETE",
             })
                 .then((res) => res.json())
@@ -36,7 +36,7 @@ const AllOrder = () => {
         const updatestatus = AllOrder.find((update) => update?._id === id);
         updatestatus.status = "approved";
 
-        const uri = `https://travel-website-5fb93.web.app/myorder/${id}`;
+        const uri = `https://whispering-taiga-90929.herokuapp.com/myorder/${id}`;
         fetch(uri, {
             method: "PUT",
             headers: {
