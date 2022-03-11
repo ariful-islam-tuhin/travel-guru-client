@@ -7,7 +7,7 @@ const UseService = () => {
     // console.log(AllService)
     
     useEffect(() => {
-      fetch("https://whispering-taiga-90929.herokuapp.com/services")
+      fetch("https://powerful-temple-24287.herokuapp.com/services")
         .then((res) => res.json())
         .then((data) => setServices(data));
     }, []);

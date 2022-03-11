@@ -9,7 +9,7 @@ const AddService = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://whispering-taiga-90929.herokuapp.com/services", data)
+      .post("https://powerful-temple-24287.herokuapp.com/services", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("added succesfully");

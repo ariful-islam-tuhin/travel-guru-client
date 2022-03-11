@@ -8,7 +8,7 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        const uri = `https://whispering-taiga-90929.herokuapp.com/${user?.email}`;
+        const uri = `https://powerful-temple-24287.herokuapp.com/myorder/${user?.email}`;
         fetch(uri)
             .then((res) => res.json())
             .then((data) => setMyOrder(data));
@@ -19,7 +19,7 @@ const MyOrder = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("are you sure, you want to delete!!!");
         if (proceed) {
-          fetch(`https://whispering-taiga-90929.herokuapp.com/myorder/${id}`, {
+          fetch(`https://powerful-temple-24287.herokuapp.com/myorder/${id}`, {
             method: "DELETE",
           })
             .then((res) => res.json())
