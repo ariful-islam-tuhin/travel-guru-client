@@ -16,7 +16,7 @@ const SingleService = (props) => {
                         <h5>{name}</h5>
                         <p>{para}</p>
                         <Link to={`/placebook/${_id}`}>
-                            <button className="book-now">BOOK NOW</button>
+                            <button className="book-now">Book Place</button>
                         </Link>
                     </div>
                 </div>

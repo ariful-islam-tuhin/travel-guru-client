@@ -8,7 +8,7 @@ const Services = () => {
   return (
 
     <div className='container'>
-      <h2 className="rooms-featured">Room Booked</h2>
+      <h2 className="rooms-featured"> Book Your chosen Place </h2>
 
 
       <div className="home-container">

@@ -13,7 +13,7 @@ import PlaceBook from './Component/PlaceBook/PlaceBook';
 import AddService from './Component/AddService/AddService';
 import MyOrder from './Component/MyOrder/MyOrder';
 import AllOrder from './Component/AllOrder/AllOrder';
-
+import Footer from './Component/Footer/Footer';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Router basename="/tothepoint_login">
           <Navigation />
           <Switch>
-            
+
             <Route exact path="/">
               <Home></Home>
             </Route>
@@ -50,18 +50,18 @@ function App() {
             </Route>
 
             <Route path="/myorder">
-           <MyOrder></MyOrder>
+              <MyOrder></MyOrder>
             </Route>
 
             <Route path="/allorder">
-           <AllOrder></AllOrder>
+              <AllOrder></AllOrder>
             </Route>
 
             <Route path="*">
               <NotFound></NotFound>
             </Route>
-
           </Switch>
+          <Footer></Footer>
 
         </Router>
       </AuthProvider>

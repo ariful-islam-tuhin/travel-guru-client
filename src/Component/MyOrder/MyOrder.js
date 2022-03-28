@@ -35,8 +35,6 @@ const MyOrder = () => {
         }
       };
 
-
-
     return (
         <Container className="py-5">
         <Row xs={1} md={3} className="g-4">
