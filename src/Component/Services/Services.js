@@ -13,15 +13,15 @@ const Services = () => {
       <div className="row mt-4 pt-3">
         <div className="col-lg-4">
           <img
-            className="relex-area"
-            src="https://thumbs.dreamstime.com/b/asian-woman-travel-nature-travel-relax-sit-reading-book-balcony-resort-view-field-moutain-summer-146430628.jpg"
+            className="relax-area"
+            src="https://img.freepik.com/free-photo/smiling-asian-woman-wearing-sunglasses-relaxing-catamaran-net-enjoying-summer-holiday_368093-1129.jpg?size=626&ext=jpg"
             alt=""
           />
         </div>
         <div className="col-lg-4">
           <img
-            className="relex-area"
-            src="https://c8.alamy.com/comp/2A1TXYT/shekvetili-georgia-29052019-relaxation-area-with-wooden-benches-and-table-at-paragraph-hotel-travel-2A1TXYT.jpg"
+            className="relax-area"
+            src="https://travelcommunication.net/wp-content/uploads/2018/10/travel%20image%20Patong%20Beach.jpg"
             alt=""
           />
         </div>

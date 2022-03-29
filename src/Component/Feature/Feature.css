@@ -1,6 +1,6 @@
 .fill-comfort {
     padding: 50px 20px;
-    background-color: #f8f6f2;
+    background-color: #ebe8e8;
   }
   .comfort {
     letter-spacing: 50;
@@ -10,9 +10,7 @@
     font-size: 15px;
     color:rgb(160, 159, 159);
   }
-  .image-daining{
-      width: 900px;
-  }
+
   .order-lists{
       color:rgb(0, 0, 0);
       margin:left;
