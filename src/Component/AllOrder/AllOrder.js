@@ -55,7 +55,7 @@ const AllOrder = () => {
 
     return (
         <div>
-            <h1>all order </h1>
+            <h5>All order of user </h5>
             <Container className="py-5">
                 <Row xs={1} md={3} className="g-4">
                     {AllOrder.map((order) => (

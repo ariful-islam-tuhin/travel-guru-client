@@ -19,8 +19,12 @@
    max-width: 400px; 
   }
   .background-img{
-  background-image: url('https://i.ibb.co/pPGjydg/Rectangle-1.png');
+  background-image: url('https://c1.wallpaperflare.com/preview/6/757/217/nature-travel-adventure-friends.jpg');
   }
   .carusel-side{
     background-color: rgba(255, 0, 0, 0.418);
+  }
+  .height{
+    height: 500px;
+    margin-left: 900px;
   }
